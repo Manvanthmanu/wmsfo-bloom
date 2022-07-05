@@ -1,0 +1,43 @@
+.header{
+    color: #FFC000;
+}
+
+.mainGrid{
+    margin-top: 30px !important;
+}
+.section{
+    display: flex;
+    align-items: center;
+    /* margin: 0 !important; */
+    padding: 0 !important; 
+    justify-content: space-between;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+}
+
+.textfield5 input{
+    color: white;
+}
+
+.section-1-1-5 div{
+    background-color: #FFC000;
+    border-radius: 2px;
+    width: 345px;
+    height: 40px;
+}
+
+.section-1-1-7 div{
+    margin: 0px !important;
+}
+
+.manvanth div{
+    height: 40px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.manvanth div div{
+    margin-top: 10px !important;
+}
+
