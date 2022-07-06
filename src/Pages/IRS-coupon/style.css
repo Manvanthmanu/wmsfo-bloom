@@ -2,7 +2,7 @@
     color: #FFC000;
 }
 
-.mainGrid{
+.mainGrid-1{
     margin-top: 30px !important;
 }
 .section{
@@ -16,7 +16,8 @@
 }
 
 .textfield5 input{
-    color: white;
+    color: black;
+    font-size: 14px;
 }
 
 .section-1-1-5 div{
@@ -41,3 +42,43 @@
     margin-top: 10px !important;
 }
 
+
+.mainGrid-2{
+    margin-top: 80px !important;
+}
+
+.section-1-2-7 div ,.section-1-2-8 div{
+    background-color: #FFC000;
+    border-radius: 2px;
+    color: black;
+    width: 345px;
+    height: 40px;
+}
+
+
+
+/* ---------------------- */
+
+.mainGrid-3{
+    margin-top: 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.subHeading{
+    text-decoration: underline;
+    font-weight: 800;
+    color: #FFC000;
+}
+.fixedlegcontainer{
+    margin-top: 20px;
+}
+
+
+.containerlast{
+    margin-bottom: 20px;
+}
+.mainGrid-5{
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
+}

@@ -4,7 +4,6 @@ import Album from './Pages/SelectionPage/SelectionPage'
 import ButtonAppBar from './Components/Navbar';
 import IrsCoupon from './Pages/IRS-coupon/IrsCoupon';
 import ResponsiveAppBar from './Components/LoginedNav';
-import { Helmet } from 'react-helmet';
 import './App.css';
 
 import {
@@ -13,14 +12,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { bgcolor } from '@mui/system';
 
 
 const Combined =()=>{
     return(
       // <div style={{backgroundColor:'black'}}>
        // <Helmet bodyAttributes={{style: 'background-color : black ; color:#FFFF00'}} style={{bgcolor:'black'}}/>
-       <div style={{color:'#FFFF00' ,height:'1000px' , background:'black'}}>
+       <div style={{color:'#FFFF00'  , background:'black'}}>
         <ResponsiveAppBar/>
         <IrsCoupon/>
       </div>

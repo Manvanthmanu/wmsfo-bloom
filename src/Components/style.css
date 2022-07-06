@@ -4,4 +4,11 @@
     width: 330px !important;
 }
 
-
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+    padding-top: 0 !important;
+}

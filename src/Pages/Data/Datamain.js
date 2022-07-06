@@ -171,7 +171,7 @@ const AccountName = {
         ]}
 const DayCountConvention = {
         name: "daycountconvention",
-        label: "Day Count Convention",
+        label: "Day Count",
         select: true,
         fullWidth: false,
         required: false,
@@ -216,7 +216,7 @@ const ClearingHouse = {
         ]}
 const Currency = {
         name: "Currency",
-        label: "Currency",
+        label: "Settlement Currency",
         select: true,
         fullWidth: false,
         required: false,
@@ -299,11 +299,9 @@ const Currency = {
                 { text: "XDR" , value: "xdr" },
                 { text: "IRR" , value: "irr" },
                 { text: "IQD" , value: "iqd" },
-                { text: "GBP" , value: "gbp" },
                 { text: "ILS" , value: "ils" },
                 { text: "JMD" , value: "jmd" },
                 { text: "JPY" , value: "jpy" },
-                { text: "GBP" , value: "gbp" },
                 { text: "JOD" , value: "jod" },
                 { text: "KZT" , value: "kzt" },
                 { text: "KES" , value: "kes" },
@@ -318,7 +316,6 @@ const Currency = {
                 { text: "LRD" , value: "lrd" },
                 { text: "LYD" , value: "lyd" },
                 { text: "CHF" , value: "chf" },
-                { text: "XPF" , value: "xpf" },
                 { text: "NIO" , value: "nio" },
                 { text: "NGN" , value: "ngn" },
                 { text: "OMR" , value: "omr" },
@@ -1098,7 +1095,7 @@ const TypeOfBarrierSingle = {
 }
 const BusinessDateAdjustmentRestBdc= {
         name: "Business Date Adjustment / Rest Bdc",
-        label: "Fees",
+        label: "Business Day Conve",
         select: true,
         fullWidth: false,
         required: false,
