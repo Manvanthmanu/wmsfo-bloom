@@ -1,0 +1,26 @@
+.changewidth{
+    height: 40px !important ;
+    margin-top: 0px !important;
+    width: 330px !important;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+    padding-top: 0 !important;
+}
+
+.textfield input{
+    color: black;
+    font-size: 14px;
+}
+.textfield div{
+    background-color: #FFC000;
+    border-radius: 2px;
+    color: black;
+    width: 345px;
+    height: 40px;
+}

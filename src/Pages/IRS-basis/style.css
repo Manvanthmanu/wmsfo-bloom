@@ -1,0 +1,26 @@
+.section{
+    display: flex;
+    align-items: center;
+    /* margin: 0 !important; */
+    padding: 0 !important; 
+    justify-content: space-between;
+    padding-left: 5px !important;
+    margin-left: 10px !important;
+}
+.mainGrid-3{
+    margin-top: 50px;
+}
+.mainGrid-4{
+    margin-top: 50px;
+}
+.mainGrid-5{
+    margin-top: 50px;
+}
+.mainGrid-6{
+
+    margin-top: 80px !important;
+}
+
+.buttonirscoupon{
+    margin-top: 40px;
+}

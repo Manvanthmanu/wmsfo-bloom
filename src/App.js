@@ -4,6 +4,9 @@ import Album from './Pages/SelectionPage/SelectionPage'
 import ButtonAppBar from './Components/Navbar';
 import IrsCoupon from './Pages/IRS-coupon/IrsCoupon';
 import ResponsiveAppBar from './Components/LoginedNav';
+import Cds from './Pages/CDS/Cds'
+import Swapation from './Pages/Swapations/Swapations'
+import Capandfloar from './Pages/CapandFloar/Capandfloor'
 import './App.css';
 
 import {
@@ -12,12 +15,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import IrsBasis from './Pages/IRS-basis/IrsBasis';
 
 
 const Combined =()=>{
     return(
-      // <div style={{backgroundColor:'black'}}>
-       // <Helmet bodyAttributes={{style: 'background-color : black ; color:#FFFF00'}} style={{bgcolor:'black'}}/>
        <div style={{color:'#FFFF00'  , background:'black'}}>
         <ResponsiveAppBar/>
         <IrsCoupon/>
@@ -33,6 +35,39 @@ const Combined2 =()=>{
     )
 }
 
+const IrsBasisMain =()=>{
+  return(
+    <div style={{color:'#FFFF00'  , background:'black'}}>
+      <ResponsiveAppBar/>
+      <IrsBasis/>
+    </div>
+  )
+}
+const Cdsmain =()=>{
+  return(
+    <div style={{color:'#FFFF00'  , background:'black'}}>
+      <ResponsiveAppBar/>
+      <Cds/>
+    </div>
+  )
+}
+const Swapationmain =()=>{
+  return(
+    <div style={{color:'#FFFF00'  , background:'black'}}>
+      <ResponsiveAppBar/>
+      <Swapation/>
+    </div>
+  )
+}
+const CapandFloarmain =()=>{
+  return(
+    <div style={{color:'#FFFF00'  , background:'black'}}>
+      <ResponsiveAppBar/>
+      <Capandfloar/>
+    </div>
+  )
+}
+
 
 function App() {
 
@@ -46,6 +81,10 @@ function App() {
             <Route path="/signup" component={SignUp}/>
             <Route path="/album" component={Combined2} />
             <Route path="/irsCoupon" component={Combined} />
+            <Route path="/irsBasis" component={IrsBasisMain} />
+            <Route path="/cds" component={Cdsmain} />
+            <Route path="/swapation" component={Swapationmain} />
+            <Route path="/capandfloor" component={CapandFloarmain} />
             <Route path="/" component={ButtonAppBar}/>
             <Route path="*" component={NoMatch}/>
 

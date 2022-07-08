@@ -686,8 +686,8 @@ const TerminationDate = {
                 { text: "Spot/Week" , value: "spot/week" },
         ]}
 const BookingStatus  = {
-        name: "Booking  Status ",
-        label: "bookingstatus ",
+        name: "bookingstatus ",
+        label: "Booking Status ",
         select: true,
         fullWidth: false,
         required: false,
@@ -1113,6 +1113,14 @@ const BusinessDateAdjustmentRestBdc= {
         ]
 }
 
+const ReferenceInstrument={
+        name:'Referenceinstrument',
+        label:'Reference Instrument',
+        elements:[
+                { text:'none',value:'none'}
+        ]
+}
+
 export default CounterParty
 
-export {Custodian,AccountName,DayCountConvention,ClearingHouse,Currency,BenchmarkIndex,BusinessCentreHoliday,PaymentFrequency,RestructingType,RollConvention,PriceConvention,OrderTypeCDS,OrderTypeIRS,ValuationCDS,ValuationOptions,Commission,TypeOfBarrier,BusinessDateAdjustment,QuoteFormatcds,TradeTypesirs,TerminationDate,BookingStatus,QuoteType,Rounding,TradeTypeOtc,PrincipalExchange,FeesOtc,DiscountCurve,CashFlowType,Status,TraderDealer,PrimeBrokersServices,OrderType,ExpirationStyle,SettlementType,CurrencyPairs,OrderTypeRepo,SecurityType,TypeOfBarrierSingle,BusinessDateAdjustmentRestBdc}
+export {Custodian,AccountName,DayCountConvention,ClearingHouse,Currency,BenchmarkIndex,BusinessCentreHoliday,PaymentFrequency,RestructingType,RollConvention,PriceConvention,OrderTypeCDS,OrderTypeIRS,ValuationCDS,ValuationOptions,Commission,TypeOfBarrier,BusinessDateAdjustment,QuoteFormatcds,TradeTypesirs,TerminationDate,BookingStatus,QuoteType,Rounding,TradeTypeOtc,PrincipalExchange,FeesOtc,DiscountCurve,CashFlowType,Status,TraderDealer,PrimeBrokersServices,OrderType,ExpirationStyle,SettlementType,CurrencyPairs,OrderTypeRepo,SecurityType,TypeOfBarrierSingle,BusinessDateAdjustmentRestBdc , ReferenceInstrument}

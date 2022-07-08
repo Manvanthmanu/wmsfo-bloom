@@ -54,7 +54,7 @@ function IrsCoupon(props) {
     const theme = createTheme({
       palette: {
         primary: {
-          main: amber[800],
+          main: green['A200'],
         },
         secondary: {
           main: green[500],
@@ -78,7 +78,7 @@ function IrsCoupon(props) {
       <Container >
         
         <div className="header">
-         <h1 style={{textAlign:'center' }}>Interest Rate Swaps</h1>
+         <h1 style={{textAlign:'center' }}>Interest Rate Swap Coupon</h1>
         </div>
       <ThemeProvider theme={theme}>   
           <Box component='form'  onSubmit={handleSubmit}>
@@ -155,7 +155,7 @@ function IrsCoupon(props) {
                 Trade Date
               </Typography>
               
-              <Datepicker  value={manvanth}/>
+              <Datepicker/>
               </Grid>
               {/* ========================== 5*/}
               <Grid className='section section-1-1-5' item xs={5.5}>
@@ -310,6 +310,8 @@ function IrsCoupon(props) {
                       className='textfield5'
                       id="outlined-disabled"
                       type='number'
+                      step=".01"
+                      inputProps={{ min:1 }}
                       sx={{color:'black'}}
                     />
                   </Grid>
