@@ -1121,6 +1121,64 @@ const ReferenceInstrument={
         ]
 }
 
+const BermudaExcerise ={
+        name:'BermudaExcerise',
+        label:'Bermuda Excerise',
+        elements:[
+                { text:'none',value:'none'},
+                { text:'Fixed',value:'fixed'},
+                { text:'Float',value:'float'}
+        ]
+}
+
+const Type={
+        name:'Type',
+        label:'Type',
+        elements:[
+                { text:'Rate cap',value:'ratecap'},
+                { text:' Rate Floor',value:' ratefloor'},
+        ]
+}
+
+const Settlement ={
+        name:'Settlement',
+        label:'Settlement',
+        elements:[
+                { text:'Paid In Arrears ',value:'paidinarrears'},
+                { text:'Paid Advance ',value:'paidadvance'},
+        ]
+}
+
+const PaymentTypes ={
+        name:'PaymentTypes',
+        label:'Payment Types',
+        elements:[
+                { text:'Fixed',value:'fixed'},
+                { text:'Floot',value:'Floot'},
+        ]
+}
+
+const Yesno ={
+        name:'Yesno',
+        label:'Yes/No',
+        elements:[
+                { text:'Yes',value:'yes'},
+                { text:'No',value:'no'},
+        ]
+}
+
+const NearRateType ={
+        name:'NearRateType',
+        label:'Near Rate Type',
+        elements:[
+                { text:'All in',value:'Allin'},
+                { text:'Rate',value:'Rate'},
+                { text:'Points',value:'Points'},
+        ]
+
+}
+
 export default CounterParty
 
-export {Custodian,AccountName,DayCountConvention,ClearingHouse,Currency,BenchmarkIndex,BusinessCentreHoliday,PaymentFrequency,RestructingType,RollConvention,PriceConvention,OrderTypeCDS,OrderTypeIRS,ValuationCDS,ValuationOptions,Commission,TypeOfBarrier,BusinessDateAdjustment,QuoteFormatcds,TradeTypesirs,TerminationDate,BookingStatus,QuoteType,Rounding,TradeTypeOtc,PrincipalExchange,FeesOtc,DiscountCurve,CashFlowType,Status,TraderDealer,PrimeBrokersServices,OrderType,ExpirationStyle,SettlementType,CurrencyPairs,OrderTypeRepo,SecurityType,TypeOfBarrierSingle,BusinessDateAdjustmentRestBdc , ReferenceInstrument}
+export {Custodian,AccountName,DayCountConvention,ClearingHouse,Currency,BenchmarkIndex,BusinessCentreHoliday,PaymentFrequency,RestructingType,RollConvention,PriceConvention,OrderTypeCDS,OrderTypeIRS,ValuationCDS,ValuationOptions,Commission,TypeOfBarrier,BusinessDateAdjustment,QuoteFormatcds,TradeTypesirs,TerminationDate,BookingStatus,QuoteType,Rounding,TradeTypeOtc,PrincipalExchange,FeesOtc,DiscountCurve,CashFlowType,Status,TraderDealer,PrimeBrokersServices,OrderType,ExpirationStyle,SettlementType,CurrencyPairs,OrderTypeRepo,SecurityType,TypeOfBarrierSingle,BusinessDateAdjustmentRestBdc , ReferenceInstrument ,BermudaExcerise ,Type ,Settlement ,
+PaymentTypes ,Yesno ,NearRateType}

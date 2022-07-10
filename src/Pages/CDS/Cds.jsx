@@ -71,7 +71,7 @@ function CDS() {
             </Grid>
 
             <Grid container spacing={1} className='mainGrid-2' >
-              <Dropdown className='hello world' name={BusinessDateAdjustmentRestBdc} label={'Business Adjustment Date'} classname={'manvanth'}/>
+              <Dropdown  name={BusinessDateAdjustmentRestBdc} label={'Business Adjustment Date'} classname={'manvanth'}/>
               <Dropdown name={BusinessCentreHoliday} label={'Business Centre'} />
               <InputField label={'Recovery Rate'} type={'text'}/>
               <Dropdown name={ReferenceInstrument} label={ReferenceInstrument.label} />
