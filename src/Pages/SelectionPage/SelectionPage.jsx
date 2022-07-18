@@ -19,7 +19,7 @@ export default function BoxSx() {
 
     
   return (
-    <div style={{background:'black'}}>
+    <div style={{background:'black' ,paddingBottom:'40px'}}>
        <Container sx={{mt:5 }}>
         {/* ----------------------------------------------------- 1 */}
        <Grid container spacing={14}>
@@ -30,13 +30,10 @@ export default function BoxSx() {
                     <Typography gutterBottom variant="h5" component="div" style={{color:'black'}}>
                     IRS-coupon
                     </Typography>
-                    <Typography variant="body2" color="text.secondary" style={{color:'black'}}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-                    </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}}  href='irsCoupon'>START</Button>
-                    <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}}  href='irsCoupon'>TRADE</Button>
+                    
                 </CardActions>
                 </Card>
             </Grid>
@@ -47,14 +44,11 @@ export default function BoxSx() {
                     <Typography gutterBottom variant="h5" component="div"  style={{color:'black'}}>
                     IRS-Basis
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
                     
-                    </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='irsBasis'>START</Button>
-                    <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='irsBasis'>TRADE</Button>
+                    
                 </CardActions>
                 </Card>
             </Grid>
@@ -63,15 +57,13 @@ export default function BoxSx() {
             <Card sx={{ maxWidth: 300 , bgcolor:'#ffc000'}}  style={{color:'black'}}>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                    CDS
+                    Credit Default Swaps
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} >START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} >TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>
@@ -82,13 +74,11 @@ export default function BoxSx() {
                     <Typography gutterBottom variant="h5" component="div"  style={{color:'black'}}>
                     swaptions
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}}  href={'swapation'}>START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}}  href={'swapation'}>TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>
@@ -97,15 +87,13 @@ export default function BoxSx() {
             <Card sx={{ maxWidth: 300 , bgcolor:'#ffc000'}}>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div"  style={{color:'black'}}>
-                    Cap & Floar
+                    interest are cap and floor
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='capandfloor'>START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='capandfloor'>TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>
@@ -114,15 +102,13 @@ export default function BoxSx() {
             <Card sx={{ maxWidth: 300, bgcolor:'#ffc000' }}>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div"  style={{color:'black'}}>
-                    FRA
+                    Forward Rate Agreement 
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='fra'>START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='fra'>TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>
@@ -133,13 +119,11 @@ export default function BoxSx() {
                     <Typography gutterBottom variant="h5" component="div"  style={{color:'black'}}>
                     Repo 
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='repo'>START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='repo'>TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>
@@ -150,13 +134,11 @@ export default function BoxSx() {
                     <Typography gutterBottom variant="h5" component="div"  style={{color:'black'}}>
                     FX Swap
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='fxswap'>START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='fxswap'>TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>
@@ -165,15 +147,13 @@ export default function BoxSx() {
             <Card sx={{ maxWidth: 300, bgcolor:'#ffc000' }}>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div" style={{color:'black'}}>
-                    OTC-OV 
+                    OTC & Exotic  Barrier Options 
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='otcov'>START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='otcov'>TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>
@@ -184,13 +164,11 @@ export default function BoxSx() {
                     <Typography gutterBottom variant="h5" component="div"  style={{color:'black'}}>
                     Fx options
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='fxoptions'>START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='fxoptions'>TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>
@@ -201,13 +179,11 @@ export default function BoxSx() {
                     <Typography gutterBottom variant="h5" component="div"  style={{color:'black'}}>
                     SLB 
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='slb'>START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='slb'>TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>
@@ -216,15 +192,13 @@ export default function BoxSx() {
             <Card sx={{ maxWidth: 300, bgcolor:'#ffc000' }}>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div"  style={{color:'black'}}>
-                    BDTO 
+                    Brand-Price Trade Off 
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-                    </Typography>
+                    
                 </CardContent>
                 <CardActions>
-                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='bdto'>START</Button>
-                     <Button size="small" style={{color:'red' }}>Learn More</Button>
+                    <Button size="small" style={{color:'green' , fontWeight:'bolder'}} href='bdto'>TRADE</Button>
+                     
                 </CardActions>
                 </Card>
             </Grid>

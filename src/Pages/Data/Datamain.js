@@ -1177,8 +1177,57 @@ const NearRateType ={
         ]
 
 }
+const FinancingType ={
+        name:'NearRateType',
+        label:'Financing Type',
+        elements:[
+                { text:'Fixed',value:'fixed'},
+                { text:'float',value:'float'},
+        ]
 
+}
+
+const ordertypeslb = {
+        name: "ordertypeslb",
+        label: "Order Types",
+        elements:[
+                { text: "Loan" , value: "loan" },
+                { text: "Unwind Loan" , value: "unwindloan" },
+                { text: "Borrow" , value: "borrow" },
+                { text: "Unwind Borrow" , value: "unwindborrow" },
+        ]
+
+}
+
+
+const PayoutTime ={
+        name:'PayoutTime',
+        label:'Payout Time',
+        elements:[
+                { text:'Deffered',value:'deffered'},
+                { text:'Immidiate',value:'immediate'},
+        ]
+}
+
+
+const Buysell ={
+        name:'Buysell',
+        label:'Buy/Sell',
+        elements:[
+                { text:'Buy',value:'buy'},
+                { text:'Sell',value:'sell'},
+        ]
+}
+
+const CashAsset ={
+        name:'CashAsset',
+        label:'Cash Asset',
+        elements:[
+                { text:'Cash',value:'cash'},
+                { text:'Asset',value:'asset'},
+        ]
+}
 export default CounterParty
 
 export {Custodian,AccountName,DayCountConvention,ClearingHouse,Currency,BenchmarkIndex,BusinessCentreHoliday,PaymentFrequency,RestructingType,RollConvention,PriceConvention,OrderTypeCDS,OrderTypeIRS,ValuationCDS,ValuationOptions,Commission,TypeOfBarrier,BusinessDateAdjustment,QuoteFormatcds,TradeTypesirs,TerminationDate,BookingStatus,QuoteType,Rounding,TradeTypeOtc,PrincipalExchange,FeesOtc,DiscountCurve,CashFlowType,Status,TraderDealer,PrimeBrokersServices,OrderType,ExpirationStyle,SettlementType,CurrencyPairs,OrderTypeRepo,SecurityType,TypeOfBarrierSingle,BusinessDateAdjustmentRestBdc , ReferenceInstrument ,BermudaExcerise ,Type ,Settlement ,
-PaymentTypes ,Yesno ,NearRateType}
+PaymentTypes ,Yesno ,NearRateType ,FinancingType ,ordertypeslb ,PayoutTime ,Buysell ,CashAsset} 

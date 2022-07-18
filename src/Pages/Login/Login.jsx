@@ -59,8 +59,8 @@ export default function SignInSide() {
      
     });
 
-    if(email==='manvanthmn1234@gmail.com'){
-      if(password==='manvanth'){
+    if(email==='wmsfo@gmail.com'){
+      if(password==='123456'){
         window.location.replace('album')
       }
       else{

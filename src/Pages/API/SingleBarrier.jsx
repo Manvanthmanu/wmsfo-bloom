@@ -10,7 +10,7 @@ import './style.css'
 function SingleBarrier() {
   return (
     <>
-    <Grow in={'checked'}>
+    <Grow in={true}>
         <div  spacing={1} className="singlebarrier">
             <div className="singlebarrier-header">
                 <h1 className='red'>Single Barrier</h1>
@@ -32,27 +32,11 @@ function SingleBarrier() {
 function DoubleBarrier() {
   return (
     <>
-    <Grow in={'checked'}>
-        <div className="singlebarrier">
-            <div className="singlebarrier-header" id='barrier'>
-                <h1 className='red'>Single Barrier</h1>
-            </div>
-            <Grid className='section' container spacing={1}>
-                <Dropdown name={TypeOfBarrierSingle} label={TypeOfBarrierSingle.label} />
-                <InputField label={'Knock in/out price'} type={'number'}/>
-                <Datepicker name={'Effective Date'} label={'Effective Date'}/>
-                <Datepicker name={'Termination date'} label={'Termination date'}/>
-                <InputField label={'Rebate'} type={'number'}/>
-                <Datepicker name={'barrier Instrument '} label={'barrier Instrument '}/>
-
-            </Grid>
-        </div>
-        </Grow>
 
         <Grow
-            in={'checked'}
+            in={true}
             style={{ transformOrigin: '0 0 0' }}
-            {...('checked' ? { timeout: 1000 } : {})}
+            {...(true ? { timeout: 1000 } : {})}
         >
         <div className="singlebarrier">
             <div className="singlebarrier-header">
@@ -66,8 +50,6 @@ function DoubleBarrier() {
                 <InputField label={'Rebate'} type={'number'}/>
                 <Datepicker name={'Termination date'} label={'Termination date'}/>
                 <Datepicker name={'barrier Instrument '} label={'barrier Instrument '}/>
-
-
             </Grid>
         </div>
         </Grow>
