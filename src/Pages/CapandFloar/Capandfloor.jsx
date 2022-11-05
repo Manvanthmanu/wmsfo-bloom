@@ -50,7 +50,7 @@ function CDS() {
             <Grid container spacing={1} className='mainGrid-1' >
             <Dropdown name={CounterParty} label={CounterParty.label} />
               <Dropdown name={TradeTypesirs} label={TradeTypesirs.label} />
-              <Dropdown name={Custodian} label={'Account Name'} />
+              <Dropdown name={AccountName} label={'Account Name'} />
               <Datepicker name={'Trade Date'} label={'Trade Date'}/>
               <InputField label={'Deal Number'} value={Math.floor((Math.random() * 1000) + 1)}  disabled={manvanth}/>
               <Datepicker name={'Settlement date'} label={'Settlement date'}/>

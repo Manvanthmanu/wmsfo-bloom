@@ -212,7 +212,6 @@ function DigitalOptions() {
                 <Dropdown name={Currency} label={'Settlment currency'} />
                 <InputField label={'FX rate'} type='text'/>
 
-
             </Grid>
 
             <Grid container spacing={1} className='mainGrid-2' >

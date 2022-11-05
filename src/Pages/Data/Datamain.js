@@ -1227,7 +1227,19 @@ const CashAsset ={
                 { text:'Asset',value:'asset'},
         ]
 }
+
+const BasisSwap ={
+        name:'Basis Swap',
+        label:'Basis Swap',
+        elements:[
+                {text:'Pay Leg1/Receive Leg 2' ,value:'payleg1/receiveleg2'},
+                {text:'Pay Leg2/Receive Leg 1' ,value:'payleg2/receiveleg1'},
+                {text:'Unwind Pay Leg 2/Receive Leg 1' ,value:'unwindpayleg2/receiveleg1'},
+                {text:'Unwind Pay Leg 1/Receive Leg 2' ,value:'unwindpayleg1/receiveleg2'},
+        ]
+}
+
 export default CounterParty
 
 export {Custodian,AccountName,DayCountConvention,ClearingHouse,Currency,BenchmarkIndex,BusinessCentreHoliday,PaymentFrequency,RestructingType,RollConvention,PriceConvention,OrderTypeCDS,OrderTypeIRS,ValuationCDS,ValuationOptions,Commission,TypeOfBarrier,BusinessDateAdjustment,QuoteFormatcds,TradeTypesirs,TerminationDate,BookingStatus,QuoteType,Rounding,TradeTypeOtc,PrincipalExchange,FeesOtc,DiscountCurve,CashFlowType,Status,TraderDealer,PrimeBrokersServices,OrderType,ExpirationStyle,SettlementType,CurrencyPairs,OrderTypeRepo,SecurityType,TypeOfBarrierSingle,BusinessDateAdjustmentRestBdc , ReferenceInstrument ,BermudaExcerise ,Type ,Settlement ,
-PaymentTypes ,Yesno ,NearRateType ,FinancingType ,ordertypeslb ,PayoutTime ,Buysell ,CashAsset} 
+PaymentTypes ,Yesno ,NearRateType ,FinancingType ,ordertypeslb ,PayoutTime ,Buysell ,CashAsset , BasisSwap} 

@@ -28,7 +28,7 @@ function Dropdown(props) {
                     onChange={handleChange}
                     
                     value={value}
-                    style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'12px'}}
+                    style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'14px'}}
                     >
                     {props.name.elements.map((option) => (
                         <MenuItem style={{fontSize:'10px'}} key={option.value} value={option.value}  >

@@ -3,7 +3,7 @@ import React ,{useState} from 'react'
 import Dropdown from './API/Dropdown'
 import Datepicker from './API/Calender'
 import InputField from './API/InputField'
-import CounterParty , {Custodian,AccountName,DayCountConvention,ClearingHouse,Currency,BenchmarkIndex,BusinessCentreHoliday,PaymentFrequency,RestructingType,RollConvention,PriceConvention,OrderTypeCDS,OrderTypeIRS,ValuationCDS,ValuationOptions,Commission,TypeOfBarrier,BusinessDateAdjustment,QuoteFormatcds,TradeTypesirs,TerminationDate,BookingStatus,QuoteType,Rounding,TradeTypeOtc,PrincipalExchange,FeesOtc,DiscountCurve,CashFlowType,Status,TraderDealer,PrimeBrokersServices,OrderType,ExpirationStyle,SettlementType,CurrencyPairs,OrderTypeRepo,SecurityType,TypeOfBarrierSingle,BusinessDateAdjustmentRestBdc} from '../Data/Datamain'
+import CounterParty , {Custodian,AccountName,DayCountConvention,ClearingHouse,Currency,BenchmarkIndex,BusinessCentreHoliday,PaymentFrequency,RestructingType,RollConvention,PriceConvention,OrderTypeCDS,OrderTypeIRS,ValuationCDS,ValuationOptions,Commission,TypeOfBarrier,BusinessDateAdjustment,QuoteFormatcds,TradeTypesirs,TerminationDate,BookingStatus,QuoteType,Rounding,TradeTypeOtc,PrincipalExchange,FeesOtc,DiscountCurve,CashFlowType,Status,TraderDealer,PrimeBrokersServices,OrderType,ExpirationStyle,SettlementType,CurrencyPairs,OrderTypeRepo,SecurityType,TypeOfBarrierSingle,BusinessDateAdjustmentRestBdc, Yesno ,BasisSwap} from '../Data/Datamain'
 
 
 import { Box } from '@mui/material'
@@ -53,7 +53,7 @@ function IrsBasis() {
             <Grid container spacing={1} className='mainGrid-1' >
               <Dropdown name={CounterParty} label={CounterParty.label} />
               <Dropdown name={TradeTypesirs} label={TradeTypesirs.label} />
-              <Dropdown name={Custodian} label={'Account Name'} />
+              <Dropdown name={AccountName} label={'Account Name'} />
               <Datepicker name={'Trade Date'} label={'Trade Date'}/>
               <InputField label={'Deal Number'} value={Math.floor((Math.random() * 1000) + 1)}  disabled={manvanth}/>
               <Datepicker name={'Settlement date'} label={'Settlement date'}/>
@@ -68,19 +68,18 @@ function IrsBasis() {
               <Dropdown name={Currency} label={'Settlement CCY'} />
               <Dropdown name={ClearingHouse} label={ClearingHouse.label} />
               <Dropdown name={BusinessCentreHoliday} label={'Settlement Days'} />
-              <Grid item className='section' xs={5.5}></Grid>
-              <InputField label={'Dirty Price'} type={'number'}/>
+              <InputField label={'FX Float/Fixed'} type={'int'}/>
+              <Dropdown name={Yesno} label ={'Dirty Priced'} />
             </Grid>
 
 
             <Grid container spacing={1} className='mainGrid-3' > 
               <div className='subheading subheading-1'>
                   <h3 className='subHeading'>Floating Leg (1)</h3>
+                  <h5>Notional leg 1</h5>
               </div>
               <div className="container">
                 <Grid container className='container-sub' >
-                  <InputField label={'Notional Leg 1'} type={'text'}/>
-                  <Grid item className='section' xs={5.5}></Grid>
                   <Dropdown name={Currency} label={'Notional Currency'} />
                   <Dropdown name={PaymentFrequency} label={PaymentFrequency.label} />
                   <Dropdown name={DayCountConvention} label={'Day Count'} />
@@ -97,7 +96,8 @@ function IrsBasis() {
                   <InputField label={'Initial Spread (BPS)'} type={'text'}/>
                   <Datepicker name={'First Reset Date '} label={'First Reset Date'}/>
                   <Dropdown name={Rounding} label={Rounding.label} />
-                  <InputField label={'stub'} type={'text'}/>
+                  <Dropdown name={CashFlowType} label={'Cash Flow Type'} />
+                 
                   <Dropdown name={BusinessDateAdjustmentRestBdc} label={'Rest BDC'} />
                 </Grid>
               </div>
@@ -107,11 +107,11 @@ function IrsBasis() {
             <Grid container spacing={1} className='mainGrid-4' > 
               <div className='subheading subheading-2'>
                   <h3 className='subHeading'>Floating Leg (2)</h3>
+                  <h5>Notional leg 2</h5>
               </div>
               <div className="container">
                 <Grid container className='container-sub' >
-                  <InputField label={'Notional Leg 1'} type={'text'}/>
-                  <Grid item className='section' xs={5.5}></Grid>
+              
                   <Dropdown name={Currency} label={'Notional Currency'} />
                   <Dropdown name={PaymentFrequency} label={PaymentFrequency.label} />
                   <Dropdown name={DayCountConvention} label={'Day Count'} />
@@ -141,12 +141,10 @@ function IrsBasis() {
               </div>
               <div className="container">
                 <Grid container className='container-sub' >
-                  <Dropdown name={OrderType} label={OrderType.label} />
-                  <Dropdown name={Status} label={Status.label} />
-                  <Dropdown name={OrderType} label={'swap transaction type'} />
-                  <Dropdown name={PrimeBrokersServices} label={'Prime Broker'} />
-                  <InputField label={'FX Float/Fixed'} type={'number'}/>
+                  <Dropdown name={BasisSwap} label={'OrderType'} />
+                  <Dropdown name={Status} label={'Destination'} />
                   <Dropdown name={Commission} label={Commission.label} />
+                  <Dropdown name={PrimeBrokersServices} label={'Prime Broker'} />
                 </Grid>
               </div>
               <Button

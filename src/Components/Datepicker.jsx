@@ -17,7 +17,7 @@ export default function Datepicker(props) {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns} style={props.value}>
-      <Stack spacing={3} sx={{color:'red'  ,width:'345px' ,maxHeight:'40px' ,zIndex:'2'}}>
+      <Stack spacing={3} sx={{color:'red'  ,width:'345px' ,maxHeight:'40px' ,zIndex:'2' , fontSize:'14px' }}>
       
         <DesktopDatePicker
         
@@ -26,7 +26,7 @@ export default function Datepicker(props) {
           inputFormat="MM/dd/yyyy"
           value={value}
           onChange={handleChange}
-          renderInput={(params) =><FormControl sx={{bgcolor:'#FFC000' }} size="small" > <TextField className='manvanth' style={{bgcolor:'#FFC000'}} {...params}/></FormControl>
+          renderInput={(params) =><FormControl sx={{bgcolor:'#FFC000' }} size="small" > <TextField className='manvanth' style={{bgcolor:'#FFC000' , fontSize:'14px'}} {...params}/></FormControl>
         }
         />
       

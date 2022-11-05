@@ -6,7 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import CounterParty from '../Data/Datamain';
+import CounterParty, { Yesno } from '../Data/Datamain';
 import{AccountName,DayCountConvention,ClearingHouse,Currency,BenchmarkIndex,BusinessCentreHoliday,PaymentFrequency,Commission,TradeTypesirs,BookingStatus,PrincipalExchange,DiscountCurve,CashFlowType,Status,TraderDealer,PrimeBrokersServices,Rounding,OrderType,BusinessDateAdjustmentRestBdc} from '../Data/Datamain';
 import { amber } from '@mui/material/colors';
 import TextField from '@mui/material/TextField';
@@ -48,7 +48,7 @@ function IrsCoupon(props) {
       margin: '10px',
       width: '300px',
       height: '30px',
-      fontSize:'12px'
+      fontSize:'14px'
     }
 
     const theme = createTheme({
@@ -94,7 +94,7 @@ function IrsCoupon(props) {
                   id="demo-select-small"
                   onChange={handleChange1}
                   value={counterparty}
-                  style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'12px'}}
+                  style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'14px'}}
                   name='counterpartydata'
                 >
                  {CounterParty.elements.map((option) => (
@@ -117,7 +117,7 @@ function IrsCoupon(props) {
                   id="demo-select-small"
                   value={tradetypesirscoupon}
                   onChange={handleChange2}
-                  style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'12px'}}
+                  style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'14px'}}
                 >
                  {TradeTypesirs.elements.map((option) => (
                     <MenuItem style={{fontSize:'10px'}} key={option.value} value={option.value} inputprops={{ style: { fontFamily: 'Arial', color:  amber[400]}}} >
@@ -139,10 +139,10 @@ function IrsCoupon(props) {
                   id="demo-select-small"
                   value={accountname}
                   onChange={handleChange3}
-                  style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'12px'}}
+                  style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'14px'}}
                 >
                  {AccountName.elements.map((option) => (
-                    <MenuItem style={{fontSize:'10px'}} key={option.value} value={option.value} inputprops={{ style: { fontFamily: 'Arial', color:  amber[400]}}} >
+                    <MenuItem style={{fontSize:'14px'}} key={option.value} value={option.value} inputprops={{ style: { fontFamily: 'Arial', color:  amber[400]}}} >
                       {option.text}
                     </MenuItem>
                       ))}
@@ -190,7 +190,7 @@ function IrsCoupon(props) {
                       id="demo-select-small"
                       value={traderdealer}
                       onChange={handleChange4}
-                      style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'12px'}}
+                      style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'14px'}}
                     >
                       {TraderDealer.elements.map((option) => (
                         <MenuItem style={{fontSize:'10px'}} key={option.value} value={option.value}  >
@@ -211,7 +211,7 @@ function IrsCoupon(props) {
                       id="demo-select-small"
                       value={bookingstatus}
                       onChange={handleChange5}
-                      style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'12px'}}
+                      style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'14px'}}
                     >
                       {BookingStatus.elements.map((option) => (
                         <MenuItem style={{fontSize:'10px'}} key={option.value} value={option.value}  >
@@ -241,15 +241,17 @@ function IrsCoupon(props) {
               {/* 3 */}
                 <Dropdown name={PrincipalExchange} lable={PrincipalExchange.label} />
               {/* 4 */}
-                <Dropdown name={Currency} lable={Currency.label} />
+                <Dropdown name={Currency} lable={'Settlement CCY'} />
               {/* 5 */}
-                <Dropdown name={ClearingHouse} lable={Currency.label}/>
+                <Dropdown name={ClearingHouse} lable={'Clearing House'}/>
               {/* 6 */}
-                <Dropdown name={BusinessCentreHoliday} lable={BusinessCentreHoliday.label}/>
+                <Dropdown name={BusinessCentreHoliday} lable={'Settlement Days'}/>
+              <Grid className={'section'} item xs={5.5}></Grid>
+              <Grid className={'section'} item xs={5.5}></Grid>
               {/* 7 */}
               <Grid className='section section-1-2-7' item xs={5.5}>
                 <Typography>
-                  Notional 
+                  FX Float/Fixed 
                 </Typography>
                 <TextField
                   className='textfield5'
@@ -258,22 +260,14 @@ function IrsCoupon(props) {
                 />
               </Grid>
               {/* 8 */}
-              <Grid className='section section-1-2-8' item xs={5.5}>
-                <Typography>
-                  Dirty Price 
-                </Typography>
-                <TextField
-                  className='textfield5'
-                  id="outlined-disabled"
-                  sx={{color:'black'}}
-                />
+              <Dropdown name={Yesno} lable={'Dirty Price'} />
                 
-              </Grid>
             </Grid>
             {/* ======================================================================================================= */}
             <Grid container spacing={1} className='mainGrid-3' > 
               <div className='subheading-1'>
                   <h3 className='subHeading'>Fixed Leg</h3>
+                  <h5>Fixed Notional</h5>
               </div>
            
               <div className="fixedlegcontainer">
@@ -328,6 +322,7 @@ function IrsCoupon(props) {
             <Grid container spacing={1} className='mainGrid-3' > 
               <div className='subheading-1'>
                   <h3 className='subHeading'>Floating Leg</h3>
+                  <h5>Fixed Notional</h5>
               </div>
            
               <div className="fixedlegcontainer"></div>

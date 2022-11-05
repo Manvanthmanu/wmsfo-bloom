@@ -27,10 +27,10 @@ function Dropdown(props) {
                     name={props.name.name}
                     onChange={handleChange}
                     value={value}
-                    style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'12px'}}
+                    style={{border:'none' , width:'345px' , height:'40px' ,fontSize:'14px'}}
                     >
                     {props.name.elements.map((option) => (
-                        <MenuItem style={{fontSize:'10px'}} key={option.value} value={option.value}  >
+                        <MenuItem style={{fontSize:'14px'}} key={option.value} value={option.value}  >
                             {option.text}   
                         </MenuItem>
                         ))}
