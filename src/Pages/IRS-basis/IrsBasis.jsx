@@ -128,7 +128,6 @@ function IrsBasis() {
                   <InputField label={'Initial Spread (BPS)'} type={'text'}/>
                   <Datepicker name={'First Reset Date '} label={'First Reset Date'}/>
                   <Dropdown name={Rounding} label={Rounding.label} />
-                  <InputField label={'stub'} type={'text'}/>
                   <Dropdown name={BusinessDateAdjustmentRestBdc} label={'Rest BDC'} />
                 </Grid>
               </div>
